@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
+    'mr_paper',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'hello.urls'
+ROOT_URLCONF = 'mr_paper.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'hello.wsgi.application'
+WSGI_APPLICATION = 'mr_paper.wsgi.application'
 
 
 # Database
@@ -128,7 +129,7 @@ STATIC_URL = 'static/'
 
 # Added Manually
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    #os.path.join(BASE_DIR, "static")
 ]
 
 
